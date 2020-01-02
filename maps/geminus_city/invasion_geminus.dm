@@ -4,17 +4,19 @@
 
 #include "../faction_bases/ODP_Cassius/ODP_Cassius.dm"
 
-#include "../Exoplanet Research/includes.dm"
+#include "../Exoplanet Research/Exoplanet Research Ice/includes.dm"
 
 #include "../Admin Planet/includes.dm"
 
-#include "../UNSC_Iron_Will/includes.dm"
+#include "../UNSC_Halberd_Class/includes.dm"
 
-#include "../URF Commando Ship/includes.dm"
+#include "../ONI_Prowler/includes.dm"
+
+#include "../SOE_Argentum/includes.dm"
 
 #include "../Asteroid Listening Post/includes.dm"
 
-#include "../Covenant Corvette/includes.dm"
+#include "../CRS_Unyielding_Transgression/includes.dm"
 
 #include "innie_overmap.dm"
 

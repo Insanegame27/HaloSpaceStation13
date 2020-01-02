@@ -2,19 +2,21 @@
 #include "../faction_base_unsc.dm"
 
 #include "areas.dm"
+#include "ai_items.dm"
 #include "ODP_Cassius_1.dmm"
 #include "ODP_Cassius_2.dmm"
 
 /obj/effect/overmap/ship/unsc_odp_cassius
 	name = "ODP Cassius"
-	desc = "Located in geosynchronous orbit above the planet, this relatively compact Orbital Defense Platform has enough firepower to pierce any spacecraft known to man in a single hit."
+	desc = "Located in geosynchronous orbit above the planet, this relatively compact Moncton-class Orbital Defense Platform has enough firepower to pierce any spacecraft known to man in a single hit."
 	icon = 'code/modules/halo/icons/overmap/faction_misc.dmi'
 	icon_state = "SMAC"
 	faction = "UNSC"
-	overmap_spawn_near_me = list(/obj/effect/overmap/ship/unscironwill)
+	overmap_spawn_near_me = list(/obj/effect/overmap/ship/unsclightbrigade)
 	base = 1
 	block_slipspace = 1
 	fore_dir = WEST
+	anchored = 1
 
 	parent_area_type = /area/faction_base/unsc
 

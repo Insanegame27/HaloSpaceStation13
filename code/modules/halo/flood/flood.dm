@@ -445,7 +445,7 @@ GLOBAL_LIST_EMPTY(live_flood_simplemobs)
 	move_to_delay = 2
 	health = 100
 	maxHealth = 100
-	resistance = 5
+	resistance = 10
 	melee_damage_lower = 25
 	melee_damage_upper = 35
 	attacktext = "bashed"
@@ -460,7 +460,7 @@ GLOBAL_LIST_EMPTY(live_flood_simplemobs)
 	move_to_delay = 2
 	health = 125 //Combat forms need to be hardier.
 	maxHealth = 125
-	resistance = 5
+	resistance = 15
 	melee_damage_lower = 30
 	melee_damage_upper = 35
 	attacktext = "bashed"
@@ -480,7 +480,7 @@ GLOBAL_LIST_EMPTY(live_flood_simplemobs)
 	move_to_delay = 2
 	health = 100 //Combat forms need to be hardier.
 	maxHealth = 100
-	resistance = 5
+	resistance = 15
 	melee_damage_lower = 25
 	melee_damage_upper = 30
 	attacktext = "bashed"
@@ -495,7 +495,7 @@ GLOBAL_LIST_EMPTY(live_flood_simplemobs)
 	move_to_delay = 2
 	health = 100 //Combat forms need to be hardier.
 	maxHealth = 100
-	resistance = 5
+	resistance = 15
 	melee_damage_lower = 30
 	melee_damage_upper = 35
 	attacktext = "bashed"
@@ -510,7 +510,7 @@ GLOBAL_LIST_EMPTY(live_flood_simplemobs)
 	move_to_delay = 1
 	health = 125 //Combat forms need to be hardier.
 	maxHealth = 125
-	resistance = 10
+	resistance = 20
 	melee_damage_lower = 35
 	melee_damage_upper = 40
 	attacktext = "slash"
@@ -525,7 +525,7 @@ GLOBAL_LIST_EMPTY(live_flood_simplemobs)
 	move_to_delay = 1
 	health = 125 //Combat forms need to be hardier.
 	maxHealth = 125
-	resistance = 15
+	resistance = 20
 	melee_damage_lower = 35
 	melee_damage_upper = 40
 	attacktext = "slash"
@@ -546,6 +546,16 @@ GLOBAL_LIST_EMPTY(live_flood_simplemobs)
 	resistance = 20
 	bound_width = 96
 	bound_height = 96
+
+/mob/living/simple_animal/hostile/flood/combat_form/santa
+	name = "A Christmas.. Abomination"
+	desc = "A corruption of the christmas spirit, given human form. Dear God..."
+	icon = 'code/modules/halo/flood/santaflood.dmi'
+	icon_state = "normal"
+	icon_living = "normal"
+	icon_dead = "dead"
+	bound_width = 32
+	bound_height = 32
 
 //below are prison related flood
 //these flood are gamemode specific and shouldn't be used elsewhere as they're crafted

@@ -111,6 +111,9 @@
 		reload_gun()
 		next_reload_time = world.time + round_reload_time
 
+/obj/machinery/deck_gun/ex_act()
+	return
+
 /obj/machinery/deck_gun/proc/do_fire_animation()
 	flick("[icon_state]_fire",src)
 
@@ -171,11 +174,12 @@
 /obj/item/projectile/deck_gun_damage_proj/on_impact(var/atom/a)
 	. = ..()
 	if(!istype(a,/obj/effect/shield))
-		explosion(a,-1,-1,2,4, adminlog = 0)
+		explosion(a,-1,1,2,4, adminlog = 0)
 
 /obj/item/projectile/overmap/deck_gun_proj
 	name = "deck gun round"
 	desc = "thanks for examining this"
+	damage = 20
 	step_delay = 0.3 SECONDS
 	accuracy = 50 //miss chance of impacted overmap objects halved.
 	ship_damage_projectile = /obj/item/projectile/deck_gun_damage_proj
